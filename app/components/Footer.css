@@ -1,0 +1,33 @@
+footer {
+    padding: 40px 0;
+    border-top: 2px solid #000;
+}
+
+footer .container {
+    margin: 0 auto;
+    width: 1362px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .container .copy {
+    display: flex;
+    align-items: center;
+}
+
+footer .container .copy img {
+    margin-right: 40px;
+    width: 33px;
+}
+
+footer .container .copy p {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+footer .container .social ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+}

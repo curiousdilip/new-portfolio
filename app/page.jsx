@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import Footer from "./components/Footer";
 export default function Home() {
   return (
 
@@ -20,7 +21,7 @@ export default function Home() {
         <div className="container">
           <div className="content">
 
-            <h1>I’m Arnau Ros, a graphic designer & content creator based in Barcelona. Available for freelance & collaborations.
+            <h1>I’m Dilip Kumar, a Web Developer based in New Delhi. <a href="#say-hello">Available</a> for freelance & collaborations.
             </h1>
           </div>
           <Image
@@ -173,11 +174,57 @@ export default function Home() {
               <p>If contact forms aren’t your thing... send me an email at hello@arnau.design</p>
             </div>
             <div className="form">
-
+              <form action="">
+                <div className="name">
+                  <label htmlFor="name">Name:</label><br />
+                  <input type="text" id="fname" name="fname" defaultValue="First Name" />
+                  <input type="text" id="lname" name="lname" defaultValue="Last Name" />
+                </div>
+                <div className="phone-email">
+                  <div className="phone"><label htmlFor="">Phone:</label><br />
+                    <input type="tel" id="phone" name="phone" defaultValue="Phone Number" /></div>
+                  <div className="email">  <label htmlFor="">Email:</label><br />
+                    <input type="email" id="email" name="email" defaultValue="Email" /></div>
+                </div>
+                <label htmlFor=" ">Message:</label><br />
+                <textarea name="message" id="message" rows="5" placeholder="Hello ....."></textarea>
+                <input type="button" defaultValue="Send" />
+              </form>
             </div>
           </div>
         </div>
       </section>
+
+      <section id="blogs">
+        <div className="container">
+          <div className="heading">
+            <h2>Recent Blogs</h2>
+          </div>
+          <div className="content">
+            <div className="blog-container">
+              <div className="blog">
+                <h3>The ULTIMATE Figma UI Kit (Tailwind-Figma)</h3>
+                <p>29.09.23</p>
+                <a href="#">See Now</a>
+              </div>
+              <div className="seperator"></div>
+              <div className="blog">
+                <h3>The ULTIMATE Figma UI Kit (Tailwind-Figma)</h3>
+                <p>29.09.23</p>
+                <a href="#">See Now</a>
+              </div>
+              <div className="seperator"></div>
+
+              <div className="blog">
+                <h3>The ULTIMATE Figma UI Kit (Tailwind-Figma)</h3>
+                <p>29.09.23</p>
+                <a href="#">See Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
     </main >
   )
 }
