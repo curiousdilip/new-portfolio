@@ -12,10 +12,12 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Footer from "./components/Footer";
+import Cursor from "./components/Cursor";
 export default function Home() {
   return (
 
     <main>
+      <Cursor />
       <Header />
       <section id="hero">
         <div className="container">
