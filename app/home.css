@@ -201,3 +201,60 @@
     font-weight: 300;
 
 }
+
+#clients .container .clients-review {
+    margin-top: 170px;
+    text-align: center;
+}
+
+#clients .container .clients-review .swiper-slide {
+    padding: 0 77px;
+}
+
+#clients .container .clients-review .swiper-slide h3 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#clients .container .clients-review .swiper-slide h4 {
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+#clients .container .clients-review .swiper-slide p {
+    font-size: 25px;
+    font-weight: 200;
+    margin: 10px;
+}
+
+#clients .container .clients-review .swiper-button-prev,
+#clients .container .clients-review .swiper-button-next {
+    color: #000 !important;
+    border-radius: 50%;
+    border: 2px solid #000;
+    padding: 30px;
+}
+
+#clients .container .clients-review .swiper-button-prev:after,
+#clients .container .clients-review .swiper-button-next:after {
+    font-size: 30px !important;
+}
+
+#say-hello {
+    margin-bottom: 164px;
+}
+
+#say-hello .container {
+    margin: 0 auto;
+    width: 1284px;
+}
+
+
+#say-hello .container .heading h2 {
+    border-bottom: 2px solid #000;
+    font-size: 45px;
+    padding-bottom: 27px;
+    font-weight: 300;
+
+}

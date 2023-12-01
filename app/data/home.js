@@ -49,4 +49,38 @@ export const toolsData = [{
   title: "Figma"
 }, {
   title: "●"
+}, {
+  title: "Figma"
+}, {
+  title: "●"
+}, {
+  title: "Figma"
+}, {
+  title: "●"
+}, {
+  title: "Figma"
+}, {
+  title: "●"
+}, {
+  title: "Figma"
+}, {
+  title: "●"
 },]
+
+export const clientReview = [{
+  review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, alias nemo! Tenetur hic distinctio ad consequuntur deleniti nobis neque nisi?",
+  name: "Hello",
+  designation: "CEO"
+}, {
+  review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, alias nemo! Tenetur hic distinctio ad consequuntur deleniti nobis neque nisi?",
+  name: "Hello",
+  designation: "CEO"
+}, {
+  review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, alias nemo! Tenetur hic distinctio ad consequuntur deleniti nobis neque nisi?",
+  name: "Hello",
+  designation: "CEO"
+}, {
+  review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, alias nemo! Tenetur hic distinctio ad consequuntur deleniti nobis neque nisi?",
+  name: "Hello",
+  designation: "CEO"
+}]

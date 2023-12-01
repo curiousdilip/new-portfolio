@@ -3,7 +3,7 @@ import Image from "next/image";
 import Header from "./components/Header";
 import "./home.css"
 import Accordion from "./components/Accordion";
-import { servicesData, toolsData } from "./data/home";
+import { clientReview, servicesData, toolsData } from "./data/home";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -20,7 +20,7 @@ export default function Home() {
         <div className="container">
           <div className="content">
 
-            <h1>I’m Arnau Ros, a graphic designer & content creator based in Barcelona.  for freelance & collaborations.
+            <h1>I’m Arnau Ros, a graphic designer & content creator based in Barcelona. Available for freelance & collaborations.
             </h1>
           </div>
           <Image
@@ -148,8 +148,36 @@ export default function Home() {
           <div className="heading">
             <h2>What Clients Say</h2>
           </div>
+          <Swiper
+            navigation={true} modules={[Navigation]}
+            className="clients-review"
+          >
+            {clientReview.map((item, index) => (
+              <SwiperSlide key={index}>
+                <h3>{item.review}</h3>
+                <h4>{item.name}</h4>
+                <p>{item.designation}</p>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </section>
-    </main>
+      <section id="say-hello">
+        <div className="container">
+          <div className="heading">
+            <h2>Say Hello</h2>
+          </div>
+          <div className="content">
+            <div className="text">
+              <p>Looking to start a new project or just want to say hi? Send me an email and I’ll do my best to reply within 24 hrs!</p>
+              <p>If contact forms aren’t your thing... send me an email at hello@arnau.design</p>
+            </div>
+            <div className="form">
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main >
   )
 }
