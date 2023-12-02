@@ -1,7 +1,7 @@
 .cursor-outline {
-    width: 30px;
-    height: 30px;
-    border: 2px solid hsla(0, 0%, 100%, 0.5);
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(0, 0, 00, 1);
 }
 
 .cursor-dot {
