@@ -105,8 +105,8 @@ export default function Home() {
             <div className="services">
               <p>Your one stop shop for:</p>
               <div className="accordion">
-                {servicesData.map(({ title, content }) => (
-                  <Accordion title={title} content={content} />
+                {servicesData.map((item, index) => (
+                  <Accordion key={index} title={item.title} content={item.content} />
                 ))}
               </div>
             </div>

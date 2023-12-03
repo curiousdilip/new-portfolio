@@ -15,11 +15,12 @@ export default function resume() {
                     <div className="bio">
                         <h3>Dilip Kumar Maurya</h3>
                         <div className="links">
-                            <a href="tel:9899742615">+91 9899742615</a>
-                            <a href="mailto:curiousdilip@gmail.com">curiousdilip@gmail.com</a>
-                            <a href="https://www.dilipmaurya.in">Website</a>
-                            <a href="https://www.linkedin.com/in/curiousdilip/">LinkedIn</a>
-                            <a href="https://github.com/curiousdilip">Github</a>
+
+
+                            {bio.map((item, index) => (
+                                <a key={index} href={item.src}>{item.title}</a>
+
+                            ))}
                         </div>
                     </div>
                     <div className="work">
@@ -75,7 +76,7 @@ export default function resume() {
                         <div className="heading">
                             <h4>Technical Skills</h4>
                         </div>
-                        <div class="skill-box"><p>Languages:<span>JavaScript, HTML/CSS</span></p><p>Platforms:<span>Linux, Amazon Web Services, Windows, MacOS</span></p><p>Tools:<span> Git, MySQL, Amplify</span></p><p>Libraries/Frameworks:<span>Tailwind Css, Nextjs, bootstrap, Reactjs</span></p></div>
+                        <div className="skill-box"><p>Languages:<span>JavaScript, HTML/CSS</span></p><p>Platforms:<span>Linux, Amazon Web Services, Windows, MacOS</span></p><p>Tools:<span> Git, MySQL, Amplify</span></p><p>Libraries/Frameworks:<span>Tailwind Css, Nextjs, bootstrap, Reactjs</span></p></div>
                     </div></div>
             </section >
         </>
