@@ -17,3 +17,12 @@ export const bio = [
         src: 'https://github.com/curiousdilip'
     },
 ];
+
+export const work = [
+    {
+        company: "World Health Organization",
+        duration: " September 2023 - Present",
+        Designation: "Web Content Executive",
+        location: "R K Puram, Delhi",
+    }
+]
