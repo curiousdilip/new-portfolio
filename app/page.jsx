@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Header from "./components/Header";
-import "./home.css"
+import "./home.css";
 import Accordion from "./components/Accordion";
 import { clientReview, servicesData, toolsData } from "./data/home";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -15,15 +15,15 @@ import Footer from "./components/Footer";
 import Cursor from "./components/Cursor";
 export default function Home() {
   return (
-
     <main>
       <Cursor />
       <Header />
       <section id="hero">
         <div className="container">
           <div className="content">
-
-            <h1>I’m Dilip Kumar, a Web Developer based in New Delhi. <a href="#say-hello">Available</a> for freelance & collaborations.
+            <h1>
+              I’m Dilip Kumar, a Web Developer based in New Delhi.{" "}
+              <a href="#say-hello">Available</a> for freelance & collaborations.
             </h1>
           </div>
           <Image
@@ -78,8 +78,13 @@ export default function Home() {
           </div>
           <div className="content">
             <div className="text">
-              <p>Join my YouTube channel where I show my design thinking, my process, and my personality. The channel has helped over 200K designers become more proficient in the tools I use everyday, Figma, Webflow & more. Join the journey!</p><p>
-                Get in contact about a sponsorship </p>
+              <p>
+                Join my YouTube channel where I show my design thinking, my
+                process, and my personality. The channel has helped over 200K
+                designers become more proficient in the tools I use everyday,
+                Figma, Webflow & more. Join the journey!
+              </p>
+              <p>Get in contact about a sponsorship </p>
             </div>
             <Image
               src="/YouTube.jpg"
@@ -98,15 +103,28 @@ export default function Home() {
           </div>
           <div className="content">
             <div className="text">
-              <p>I'm a product designer working on various projects on a wide range of clients. My skillset lies on creating branding packages & websites to deliver the full online experience for new and also veteran businesses.
+              <p>
+                I'm a product designer working on various projects on a wide
+                range of clients. My skillset lies on creating branding packages
+                & websites to deliver the full online experience for new and
+                also veteran businesses.
               </p>
-              <p>You can often find me creating videos about design over on YouTube, or sharing my thoughts on my podcast, Dialogue With Designers . I'm passionate about giving back and teaching what I know to the next generation of designers.</p>
+              <p>
+                You can often find me creating videos about design over on
+                YouTube, or sharing my thoughts on my podcast, Dialogue With
+                Designers . I'm passionate about giving back and teaching what I
+                know to the next generation of designers.
+              </p>
             </div>
             <div className="services">
               <p>Your one stop shop for:</p>
               <div className="accordion">
                 {servicesData.map((item, index) => (
-                  <Accordion key={index} title={item.title} content={item.content} />
+                  <Accordion
+                    key={index}
+                    title={item.title}
+                    content={item.content}
+                  />
                 ))}
               </div>
             </div>
@@ -152,7 +170,8 @@ export default function Home() {
             <h2>What Clients Say</h2>
           </div>
           <Swiper
-            navigation={true} modules={[Navigation]}
+            navigation={true}
+            modules={[Navigation]}
             className="clients-review"
           >
             {clientReview.map((item, index) => (
@@ -172,24 +191,64 @@ export default function Home() {
           </div>
           <div className="content">
             <div className="text">
-              <p>Looking to start a new project or just want to say hi? Send me an email and I’ll do my best to reply within 24 hrs!</p>
-              <p>If contact forms aren’t your thing... send me an email at hello@arnau.design</p>
+              <p>
+                Looking to start a new project or just want to say hi? Send me
+                an email and I’ll do my best to reply within 24 hrs!
+              </p>
+              <p>
+                If contact forms aren’t your thing... send me an email at
+                hello@arnau.design
+              </p>
             </div>
             <div className="form">
               <form action="">
                 <div className="name">
-                  <label htmlFor="name">Name:</label><br />
-                  <input type="text" id="fname" name="fname" defaultValue="First Name" />
-                  <input type="text" id="lname" name="lname" defaultValue="Last Name" />
+                  <label htmlFor="name">Name:</label>
+                  <br />
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    defaultValue="First Name"
+                  />
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    defaultValue="Last Name"
+                  />
                 </div>
                 <div className="phone-email">
-                  <div className="phone"><label htmlFor="">Phone:</label><br />
-                    <input type="tel" id="phone" name="phone" defaultValue="Phone Number" /></div>
-                  <div className="email">  <label htmlFor="">Email:</label><br />
-                    <input type="email" id="email" name="email" defaultValue="Email" /></div>
+                  <div className="phone">
+                    <label htmlFor="">Phone:</label>
+                    <br />
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      defaultValue="Phone Number"
+                    />
+                  </div>
+                  <div className="email">
+                    {" "}
+                    <label htmlFor="">Email:</label>
+                    <br />
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      defaultValue="Email"
+                    />
+                  </div>
                 </div>
-                <label htmlFor=" ">Message:</label><br />
-                <textarea name="message" id="message" rows="5" placeholder="Hello ....."></textarea>
+                <label htmlFor=" ">Message:</label>
+                <br />
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="5"
+                  placeholder="Hello ....."
+                ></textarea>
                 <input type="button" defaultValue="Send" />
               </form>
             </div>
@@ -227,6 +286,6 @@ export default function Home() {
         </div>
       </section>
       <Footer />
-    </main >
-  )
+    </main>
+  );
 }
