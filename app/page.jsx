@@ -197,7 +197,7 @@ export default function Home() {
               </p>
               <p>
                 If contact forms aren’t your thing... send me an email at
-                hello@arnau.design
+                contact@dilipmaurya.in
               </p>
             </div>
             <div className="form">
